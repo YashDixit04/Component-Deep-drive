@@ -1,4 +1,4 @@
-import { Component, input, ViewEncapsulation } from '@angular/core';
+import { Component, HostBinding, input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-control',
@@ -11,6 +11,7 @@ import { Component, input, ViewEncapsulation } from '@angular/core';
     class: 'control'
   }
 })
-export class ControlComponent {
+export class ControlComponent { 
+//  @HostBinding('class') className = 'control'; ---- HostBinding
 label = input.required<string>()
 }
