@@ -15,8 +15,9 @@ export class NewTicketComponent {
   //  console.log(titleElement.value) 
   // }
 
-  onSubmit(title: string, ticketText: string) {
+  onSubmit(title: string, ticketText: string, form: HTMLFormElement) {
     console.log(title)
     console.log(ticketText)
+    form.reset();
   }
 }
